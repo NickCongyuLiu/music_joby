@@ -1,7 +1,5 @@
-// Main server side function with two http request wrote
 const express = require('express')
 
-// use to open browser with url
 const opn = require('opn');
 
 // web app object to deal with request

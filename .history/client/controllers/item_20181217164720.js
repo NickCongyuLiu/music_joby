@@ -5,7 +5,6 @@
             
             $scope.data = window.songs[parseInt($routeParams.itemId)];
             
-            //item routing with audio autoplay setup
             console.log($scope.data);
             window.audio && window.audio.pause()
             const audio = window.audio = new Audio();
