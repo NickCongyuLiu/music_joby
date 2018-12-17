@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Joby Music Player</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="page" ng-app="musicApp">
+  <header class="header">
+    <a href="#/add"> <i class="fa fa-plus"></i></a>
+    <h1><i class="fa fa-music"></i> Joby Music Player</h1>
+    <a href="#/list"><i class="fa fa-list"></i></a>
+  </header>
+  <section class="main" ng-view></section>
+  <script src="assets/lib/angular.js"></script>
+  <script src="assets/lib/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/add.js"></script>
+  <script src="controllers/list.js"></script>
+  <script src="controllers/item.js"></script>
+</body>
+
+</html>

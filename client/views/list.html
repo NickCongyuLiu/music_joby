@@ -1,0 +1,20 @@
+<div class="list">
+        <ol>
+            <li>
+                Search: <input ng-model="$ctrl.query" />
+
+            </li>
+            <li ng-repeat="item in songs | filter:$ctrl.query">
+                <a href="#/item/{{item.id}}">
+    
+                    <span class="num">{{('0000' + item.id).slice(-3)}}</span>
+                    <div class="info">
+                        <h3 class="title">{{item.title}}</h3>
+                        <span class="artist">{{item.artist}}</span>
+                    </div>
+                    <div class="year">{{item.year}}</div>
+                    <div class="photo"><img src="../assets/img/LP.jpeg" alt={{item.artist}}></div>
+                </a>
+            </li>
+        </ol>
+    </div>

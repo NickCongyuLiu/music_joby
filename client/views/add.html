@@ -1,0 +1,7 @@
+<form ng-controller = "HomeController" class="form-group" action="/post" method="get" enctype="multipart/form-data">
+    <h2>Add &hearts; song</h2>
+    <p type="Title:"><input required type="text" name="title" id="title" value="{{music.title}}" placeholder="Write title name here.."></p>
+    <p type="Artist:"><input required type="text"  name="artist" id="artist" value="{{music.artist}}" placeholder="Write artist name here.."></p>
+    <p type="Year:"><input required type="text"  name="year" id="year" value="{{music.year}}" placeholder="Write created year here.."></p>
+    <button ng-click="addMusic()">Add to the List</button>    
+</form>

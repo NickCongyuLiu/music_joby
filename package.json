@@ -1,0 +1,26 @@
+{
+  "name": "joby",
+  "version": "1.0.0",
+  "description": "A music player web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "music"
+  ],
+  "author": "Congyu Liu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^8.0.1",
+    "opn": "^5.4.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^7.1.3"
+  }
+}

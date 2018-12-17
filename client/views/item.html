@@ -1,0 +1,25 @@
+<div class="player">
+        <div class="disc">
+          <img src="http://www.mrmodern.com/uploads/allimg/161205/1623591910-0.jpg" alt="{{data.artist}}" :style="{transform:'rotate(' + (item.current/item.duration*360*2) + 'deg)'}">
+        </div>
+        <h2 class="title">{{data.title}}</h2>
+        <h3 class="artist">{{data.artist}}</h3>
+        <div class="lyric">
+          <p class="previous">The way she came into the place</p>
+          <p class="current">I knew right then and there</p>
+          <p class="next">There was something different</p>
+        </div>
+        <input type="range" min="0" max="{{data.duration}}" ng-model="data.current" ng-change="action.progress()">
+        <div class="controls">
+          <button><i class="fa fa-retweet"></i></button>
+          <button class="active"><i class="fa fa-backward"></i></button>
+          <button class="active" ng-click="action.play()"><i class="fa" ng-class="{' fa-play':!data.playing, 'fa-pause':data.playing}"></i></button>
+          <button class="active"><i class="fa fa-forward"></i></button>
+          <button class="active"><i class="fa fa-random"></i></button>
+        </div>
+        <audio id="itemAudio">
+          <source  src='' type="audio/mp3">
+        </audio>
+      </div>
+
+<!-- <div> item</div> -->
